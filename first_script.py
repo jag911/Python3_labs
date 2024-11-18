@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# Author: Tschmitzer
+# Version: 1.0
+# Description: First Script
 
 #name = "Thomas Schmitzer"
 name = input("What is your damned name: ")
