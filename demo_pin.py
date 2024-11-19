@@ -11,5 +11,7 @@ while pin != master_pin and count < 3:
         print("Valid PIN")
     else:
         print("Invalid PIN")
-
+else:
+    print("Too many attempts")
+    
 print("Done...")
