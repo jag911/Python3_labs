@@ -19,6 +19,6 @@ with open(svc_file,"rt") as fh_in:
 print(1024-len(used_ports['udp']))
 print(1024-len(used_ports['tcp']))
 
-print(set(range(0,1024)) - used_ports['tcp'])
-print(set(range(0,1024)) - used_ports['udp'])
+print(set(range(1,1024)) - used_ports['tcp'])
+print(set(range(1,1024)) - used_ports['udp'])
 
