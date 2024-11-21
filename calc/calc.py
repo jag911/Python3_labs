@@ -1,3 +1,7 @@
+"""
+basic calculator bs
+"""
+
 def add(*args):
     total = 0
     for num in args:
