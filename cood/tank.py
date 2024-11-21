@@ -44,3 +44,19 @@ class Tank:
     def heal(self):
         self._health = 100
         return None
+
+    def get_health(self):
+        return self._health
+
+    def get_shells(self):
+        return self._shells
+
+    def get_speed(self):
+        return self._speed
+
+    def get_direction(self):
+        return self._direction
+
+
+    def __add__(self, other):
+        return self._health + other._health
