@@ -27,3 +27,5 @@ print(f"4*3*2 = {mul(4,3,2)}")
 print(f"4-3 = {sub(4,3)}")
 
 print(f"4/3 = {div(4,3)}")
+
+print("**** DONE ****")
