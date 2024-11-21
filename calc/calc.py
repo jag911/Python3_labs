@@ -1,6 +1,8 @@
 """
 basic calculator bs
 """
+import sys
+from adv import pwr,sqr,mod
 
 def add(*args):
     total = 0
@@ -20,16 +22,22 @@ def mul(*args):
 def div(x,z):
     return round(x/z,3)
 
-print("**** BASIC CALC ****")
+if __name__ == "__main__":
+    print("**** BASIC CALC ****")
 
-print(f"4+3 = {add(4,3)}")
-print(f"4+3+2+1 = {add(4,3,2,1)}")
+    print(f"4+3 = {add(4,3)}")
+    print(f"4+3+2+1 = {add(4,3,2,1)}")
 
-print(f"4*3 = {mul(4,3)}")
-print(f"4*3*2 = {mul(4,3,2)}")
+    print(f"4*3 = {mul(4,3)}")
+    print(f"4*3*2 = {mul(4,3,2)}")
 
-print(f"4-3 = {sub(4,3)}")
+    print(f"4-3 = {sub(4,3)}")
 
-print(f"4/3 = {div(4,3)}")
+    print(f"4/3 = {div(4,3)}")
 
-print("**** DONE ****")
+    print(f"4**3 = {pwr(4,3)}")
+
+    print("**** DONE ****")
+
+
+    sys.exit(0)
