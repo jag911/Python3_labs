@@ -41,12 +41,15 @@ class Tank:
         self._health -= amount
         return None
 
-    def heal(self):
-        self._health = 100
+    @property
+    def tank_health(self):
+        return self._health
+
+    @tank_health.setter
+    def tank_health(self,amount):
+        self._health = amount
         return None
 
-    def get_health(self):
-        return self._health
 
     def get_shells(self):
         return self._shells
@@ -57,6 +60,10 @@ class Tank:
     def get_direction(self):
         return self._direction
 
+    def __str__(self):
+        return str(self._health)
 
     def __add__(self, other):
         return self._health + other._health
+
+    #tank_health = property(get_health,set_health)

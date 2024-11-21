@@ -18,14 +18,14 @@ def main():
     thomas_tank.take_damage(62)
     rick_tank.take_damage(22)
 
-    print(f"Thomas Tank health ({thomas_tank.get_health()})")
-    print(f"Rick Tank health ({rick_tank.get_health()})")
-    print(f"Rajat Tank health ({rajat_tank.get_health()})")
+    print(f"Thomas Tank health ({thomas_tank})")
+    print(f"Rick Tank health ({rick_tank}")
+    print(f"Rajat Tank health ({rajat_tank})")
 
     print(f"Team Tank health ({thomas_tank + rick_tank})")
 
-    thomas_tank.heal()
-    print(f"Thomas Tank now health ({thomas_tank.get_health()})")
+    thomas_tank.tank_health = 100
+    print(f"Thomas Tank now health ({thomas_tank})")
 
 
 
