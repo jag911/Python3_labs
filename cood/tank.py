@@ -36,3 +36,11 @@ class Tank:
     def reload(self):
         self._shells = 20
         return None
+
+    def take_damage(self,amount):
+        self._health -= amount
+        return None
+
+    def heal(self):
+        self._health = 100
+        return None
